@@ -1,0 +1,48 @@
+name: App
+controllers:
+    ProfileController:
+        - { action: editAction, label: Edycja profilu, group: Konto, section: App }
+        - { action: postChangePasswordAction, label: Zmiana hasła, group: Konto, section: App }
+        - { action: postEditAction, label: Zapis zmian w profilu, group: Konto, section: App }
+    RoleController:
+        - { action: listAction, label: Lista ról, group: Role użytkowników, section: App }
+        - { action: datatableAction, label: Widok listy rol, group: Role użytkowników, section: App }
+        - { action: createAction, label: Dostęp do tworzenia ról, group: Role użytkowników, section: App }
+        - { action: editAction, label: Dostęp do edycji ról, group: Role użytkowników, section: App }
+        - { action: deleteAction, label: Usuwanie ról, group: Role użytkowników, section: App }
+        - { action: postCreateAction, label: Zapis tworzonej roli, group: Role użytkowników, section: App }
+        - { action: postEditAction, label: Zapis edytowanej roli, group: Role użytkowników, section: App }
+    UserController:
+        - { action: listAction, label: Lista użytkowników, group: Użytkownicy, section: App }
+        - { action: datatableAction, label: Widok listy użytkowników, group: Użytkownicy, section: App }
+        - { action: createAction, label: Dostęp do tworzenia użytkowników, group: Użytkownicy, section: App }
+        - { action: editAction, label: Dostęp do edycji użytkowników, group: Użytkownicy, section: App }
+        - { action: deleteAction, label: Usuwanie użytkowników, group: Użytkownicy, section: App }
+        - { action: postCreateAction, label: Zapis tworzonego użytkownika, group: Użytkownicy, section: App }
+        - { action: postEditAction, label: Zapis edytowanego użytkownika, group: Użytkownicy, section: App }
+    PlaceController:
+        - { action: viewAction, label: Widok miejsca, group: Miejsca, section: App }
+        - { action: listAction, label: Lista miejsc, group: Miejsca, section: App }
+        - { action: datatableAction, label: Widok listy miejsc, group: Miejsca, section: App }
+        - { action: createAction, label: Dostęp do tworzenia miejsc, group: Miejsca, section: App }
+        - { action: editAction, label: Dostęp do edycji miejsca, group: Miejsca, section: App }
+        - { action: deleteAction, label: Usuwanie miejsc, group: Miejsca, section: App }
+        - { action: postCreateAction, label: Zapis tworzonego miejsca, group: Miejsca, section: App }
+        - { action: postEditAction, label: Zapis edytowanego miejsca, group: Miejsca, section: App }
+    PictureController:
+        - { action: deleteAction, label: Usuwanie zdjęć, group: Zdjęcia, section: App }
+    CommentController:
+        - { action: createAction, label: Tworzenie i edycja komentarzy, group: Komentarze, section: App }
+        - { action: deleteAction, label: Usuwanie komentarzy, group: Komentarze, section: App }
+    MapsController:
+        - { action: searchAction, label: Wyszukiwanie na mapie, group: Mapy, section: App }
+
+excluded_controllers:
+    SecurityController:
+        - loginAction
+        - logoutAction
+        - checkAction
+        - passwordRequestAction
+        - resetPasswordAction
+    DashboardController:
+        - loginAction

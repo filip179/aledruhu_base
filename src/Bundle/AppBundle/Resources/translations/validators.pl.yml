@@ -1,0 +1,12 @@
+error:
+    password:
+        not_match: Hasła nie są zgodne.
+constraint:
+    name:
+        wrong_characters: Nazwa zawiera niedozwolone znaki.
+    username:
+        wrong_characters: Nazwa użytkownika zawiera niedozwolone znaki.
+    first_name:
+        wrong_characters: Imię zawiera niedozwolone znaki.
+    last_name:
+        wrong_characters: Nazwisko zawiera niedozwolone znaki.

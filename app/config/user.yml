@@ -1,0 +1,5 @@
+user:
+    entities:
+        user_class: AppBundle\Entity\User
+
+    acl_enabled: true

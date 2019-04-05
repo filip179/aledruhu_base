@@ -1,0 +1,15 @@
+form:
+    title: Zaloguj się do swojego konta
+    username: Nazwa użytkownika
+    password: Hasło
+    remember_me: Nie wylogowuj mnie
+    login: Zaloguj
+    forgot_password: Nie pamiętasz hasła?
+    forgot_password_2: Nie martw się, kliknij
+    forgot_password_3: w ten link
+    forgot_password_4: żeby zresetować hasło.
+    forgot_password_title:  Nie pamiętasz hasła?
+    forgot_password_caption: Wpisz poniżej swój adres e-mail aby zresetować hasło.
+    forgot_password_back: Wróć
+    forgot_password_submit: Wyślij
+    forgot_password_email: e-mail

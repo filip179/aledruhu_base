@@ -1,0 +1,6 @@
+An authentication exception occurred.: Wystąpił błąd uwierzytelniania.
+Authentication credentials could not be found.: Dane uwierzytelniania nie zostały znalezione.
+Authentication request could not be processed due to a system problem.: Żądanie uwierzytelniania nie mogło zostać pomyślnie zakończone z powodu problemu z systemem.
+Invalid credentials.: Nieprawidłowe dane.
+Cookie has already been used by someone else.: To ciasteczko jest używane przez kogoś innego.
+Not domain.: Email musi znajdować się w domenie "@domain.pl"

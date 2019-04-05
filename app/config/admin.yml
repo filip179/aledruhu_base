@@ -1,0 +1,31 @@
+app:
+    login_logo: 'logo.png'
+    admin_logo: 'icon.png'
+    meta:
+        title: 'AleDruhu!'
+        description: 'Baza miejsc biwakowych i obozowych'
+    sidebar:
+        dashboard:
+            title: sidebar.dashboard
+            icon: icon-home
+            route: dashboard
+        user:
+            title: sidebar.users
+            icon: icon-users
+            route: user_list
+        role:
+            title: sidebar.roles
+            icon: icon-lock
+            route: role_list
+        place:
+            title: sidebar.places
+            icon: icon-globe
+            route: place_list
+        maps_search:
+            title: sidebar.maps_search
+            icon: icon-map
+            route: maps_search
+ #       placeType:
+ #           title: sidebar.placeTypes
+ #           icon: icon-tag
+ #           route: place_type_list

@@ -1,0 +1,17 @@
+datatable:
+    page: Strona
+    of: z
+    view: Pokaż
+    records: rekordów
+    found_total: Znaleniono
+    records_selected: zaznaczonych rekordów:
+    list_error: Wystapił bład podczas wykonywania operacji.
+    info_empty: Brak znalezionych rekordów.
+    empty_table: Brak danych w tabeli.
+    zero_records: Brak pasujących rekordów.
+    previous: Poprzedni
+    next: Następny
+    last: Ostatni
+    first: Pierwszy
+    all: Wszystkie
+    loading: Ładowanie danych...

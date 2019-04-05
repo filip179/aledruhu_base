@@ -1,0 +1,49 @@
+profile:
+    change_password:
+        successful: Hasło zostało zmienione.
+        old_password:
+            invalid: Stare hasło jest niepoprawne.
+    edit:
+        successful: Dane zostały zaktualizowane.
+
+security:
+    reset_password:
+        successful: Hasło zostało zresetowane.
+        token:
+            expired:
+    password_request:
+        successful: Wiadomość email ze zmianą hasła została wysłąna, sprawdź skrzynkę pocztową.
+
+user:
+    create:
+        successful: Utworzono nowego użytkownika.
+    delete:
+        successful: Pomyślnie usunięto użytkownika.
+    edit:
+        successful: Zaktualizowano dane użytkownika.
+
+role:
+    create:
+        successful: Utworzono nową rolę.
+    delete:
+        successful: Pomyślnie usunięto rolę.
+    edit:
+        successful: Zaktualizowano rolę.
+        
+place:
+    create:
+        successful: Utworzono nowe miejsce.
+    delete:
+        successful: Pomyślnie usunięto miejsce.
+    edit:
+        successful: Zaktualizowano miejsce.
+
+comment:
+    create:
+        successful: Dodano nowy komentarz.
+        error: Nie udało sie dodać komentarza.
+    edit:
+        successful: Udało się zaktualizować komentarz.
+        error: Nie udało się zaktualizowac komentarza.
+    delete:
+        successful: Komentarz został usunięty.

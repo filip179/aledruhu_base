@@ -1,0 +1,11 @@
+node_modules
+vendor
+var
+app/config/parameters.yml
+web/bundles
+/bin/phpunit.phar
+/.travis.vhost
+/.travis.yml
+/web/uploads/photos/*
+.idea/*
+.idea

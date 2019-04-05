@@ -1,0 +1,65 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    AppBundle\Twig\SidebarExtension:
+        arguments:
+            $menu: '%app.sidebar%'
+
+    AppBundle\Twig\CubeRawExtension:
+        autowire: true
+        autoconfigure: true
+
+    AppBundle\Twig\SelectFilterExtension:
+        autowire: true
+        autoconfigure: true
+
+    # makes classes in src/AppBundle available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    AppBundle\:
+        resource: '../../*'
+        # you can exclude directories or files
+        # but if a service is unused, it's removed anyway
+        exclude: '../../{Entity,Repository,Tests,Doctrine,Twig}'
+
+    # controllers are imported separately to make sure they're public
+    # and have a tag that allows actions to type-hint services
+    AppBundle\Controller\:
+        resource: '../../Controller'
+        public: true
+        tags: ['controller.service_arguments']
+
+    AppBundle\Form\Handler\SecurityRequestPasswordFormHandler:
+        arguments:
+            $mailerUser: '%mailer_user%'
+
+    AppBundle\Twig\DashboardExtension:
+        arguments:
+            $menu: '%app.sidebar%'
+            $aclProvider: '@AppVerk\UserBundle\Service\Acl\AclProvider'
+            $router: '@router'
+            $tokenStorage: '@security.token_storage'
+            
+    AppBundle\Twig\AccessExtension:
+        arguments:
+          $aclProvider: '@AppVerk\UserBundle\Service\Acl\AclProvider'
+          $router: '@router'
+
+    AppBundle\Doctrine\NamingStrategy\UnderscoredClassNamespacePrefix:
+        arguments:
+            $kernel: '@kernel'
+        public: false
+        
+    AppBundle\EventListener\RedirectToDashboardListener:
+            class: AppBundle\EventListener\RedirectToDashboardListener
+            arguments:
+                - "@router"
+            tags:
+                - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
+
+    AppBundle\Security\User\GoogleLoginService:
+        class: AppBundle\Security\User\GoogleLoginService
+        arguments:
+            - "@router"

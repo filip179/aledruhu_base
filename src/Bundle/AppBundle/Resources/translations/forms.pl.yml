@@ -1,0 +1,17 @@
+handler:
+    change_password:
+        old_password:
+            invalid: Stare hasło jest nieprawidłowe.
+        new_password:
+            not_same: Hasła muszą być identyczne.
+    request_password:
+        user_not_exist: użytkownik o adresie email %email% nie istnieje.
+    reset_password:
+        passwords_must_be_identical: Hasła muszą być identyczne.
+    user:
+        password_must_be_different_from_old: Nowe hasło musi się różnić od poprzedniego.
+        username_exists: Nazwa użytkownika jest już zajęta.
+        email_exists: Adres email jest już zajęty.
+    role:
+        name_exists: Rola o podanej nazwie istnieje już w systemie.
+        empty_permissions: Nie można utworzyć roli bez wybrania uprawnień.

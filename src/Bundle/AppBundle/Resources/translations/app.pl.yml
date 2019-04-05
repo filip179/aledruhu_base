@@ -1,0 +1,137 @@
+global:
+    dasboard: Pulpit
+    search: Szukaj
+    reset: Resetuj
+    buttons:
+        delete: Usuń
+        edit: Edytuj
+        view: Zobacz
+    fields:
+        bool:
+            yes: Tak
+            no: Nie
+    modals:
+        delete:
+            title: Ostrzerzenie przed usunięciem elementu!
+            content: Czy na pewno chcesz usunąć wybrany element?
+            cancel: Nie
+            delete: Tak
+
+header:
+    log_out: Wyloguj
+    my_profile: Profil
+
+sidebar:
+    dashboard: Pulpit
+    users:  Użytkownicy
+    roles:  Role użytkowników
+    places: Baza miejsc
+    maps_search: Szukaj na mapie
+
+profile:
+    edit:
+        h1: Profil
+        caption: Edycja danych
+        change_password: Zmień hasło
+
+user:
+    list:
+        h1: Użytkownicy
+        caption: Lista użytkowników
+        add: Dodaj użytkownika
+        table:
+            id: Id
+            username: Nazwa użytkownika
+            firstName: Imię
+            lastName: Nazwisko
+            email:  Email
+            createdAt: Utworzono
+            updatedAt: Zmodyfikowano
+            actions: Operacje
+            translatedRole: Uprawnienia
+    create:
+        h1: Użytkownicy
+        caption: Tworzenie nowego użytkownika
+        back: Wróć do listy użytkowników
+        create: Zapisz
+        successful: Utworzono nowego użytkownika
+    edit:
+        h1: Użytkownicy
+        caption: Edycja użytkownika "%entity%"
+        back: Wróć do listy użytkowników
+        successful: Zmodyfikowano dane użytkownika
+
+role:
+    list:
+        h1: Role użytkowników
+        caption: Lista ról użytkowników
+        add: Dodaj nową rolę
+        table:
+            id: Id
+            name: Nazwa
+            createdAt: Utworzono
+            updatedAt: Zmodyfikowano
+            actions: Operacje
+    create:
+        h1: Role
+        caption: Tworzenie nowej roli
+        back: Wróć do listy ról
+        create: Zapisz
+        successful: Utworzono nową rolę
+    edit:
+        h1: Role
+        caption: Edycja roli "%entity%"
+        back: Wróć do listy ról
+        successful: Utworzono nowego użytkownika
+
+place:
+    list:
+        h1: Baza miejsc
+        caption: Lista miejsc
+        add: Dodaj nowe miejsce
+        table:
+            id: Id
+            name: Nazwa
+            postcode: Kod pocztowy
+            city: Miasto
+            capacity: Pojemność
+            placeType: Typ miejsca
+            updatedAt: Zmodyfikowano
+            actions: Operacje
+    create:
+        h1: Baza miejsc
+        caption: Tworzenie nowego miejsca
+        back: Wróć do listy miejsc
+        create: Zapisz
+        successful: Utworzono nowe miejscec
+    edit:
+        h1: Baza miejsc
+        caption: Edycja miejsca "%entity%"
+        back: Wróć do listy miejsc
+        successful: Utworzono nowe miejsce
+
+    view:
+        h1: Baza miejsc
+        caption: Informacje o "%entity%"
+        comments: Komentarze
+        back: Wroć na listę miejsc
+        edit: Edytuj
+        name: Nazwa
+        place_type: Typ miejsca
+        capacity: Pojemność osobowa
+        phone_contact: Kontakt
+        more_contact: Dodatkowy kontakt
+        coordinates: Koordynaty
+        postcode: Kod pocztowy
+        city: Miejscowość
+        owner: Właściciel/Osoba odpowiedzialna
+        info: Dodatkowe informacje
+        modified_by: Ostatnio modyfikowany przez
+        comment:
+            createdAt: "Napisał: "
+            updatedAt: "Zaktualizował: "
+            none: Brak komentarzy...
+            reply: Odpowiedz
+            create: Dodaj komentarz
+            delete: Usuń
+            edit: Edytuj

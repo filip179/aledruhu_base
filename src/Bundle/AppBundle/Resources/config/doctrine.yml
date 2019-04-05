@@ -1,0 +1,57 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: true
+        
+    AppVerk\UserBundle\Doctrine\UserManager:
+        public: true
+        arguments:
+            $className: AppBundle\Entity\User
+        calls:
+            - method: setEncoder
+              arguments:
+                  - '@security.password_encoder'
+                  
+    AppVerk\UserBundle\Doctrine\RoleManager:
+        public: true
+        arguments:
+            $className: AppBundle\Entity\Role
+
+    AppBundle\Doctrine\AdminManager:
+        arguments:
+            $className: AppBundle\Entity\User
+
+    AppBundle\Doctrine\AdminUserManager:
+        arguments:
+            $className: AppBundle\Entity\User
+        calls:
+            - method: setEncoder
+              arguments:
+                  - '@security.password_encoder'
+
+    AppBundle\Doctrine\AdminRoleManager:
+        public: true
+        arguments:
+            $className: AppBundle\Entity\Role
+
+    AppBundle\Doctrine\PlaceManager:
+        public: true
+        arguments:
+            $className: AppBundle\Entity\Place
+            $rootDir: '%kernel.project_dir%'
+
+    AppBundle\Doctrine\PlaceTypeManager:
+        public: true
+        arguments:
+            $className: AppBundle\Entity\PlaceType
+
+    AppBundle\Doctrine\PictureManager:
+        public: true
+        arguments:
+            $className: AppBundle\Entity\Picture
+
+    AppBundle\Doctrine\CommentManager:
+        public: true
+        arguments:
+            $className: AppBundle\Entity\Comment
